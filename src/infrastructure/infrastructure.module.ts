@@ -1,14 +1,13 @@
-/*
-https://docs.nestjs.com/modules
-*/
+
 
 import { Module } from '@nestjs/common';
-import { AxiosAdapterService } from './index';
+import { AxiosAdapterService, UserController } from './index';
+ 
 
 
 @Module({
     imports: [],
-    controllers: [],
+    controllers: [UserController],
     providers: [AxiosAdapterService,],
 })
 export class InfrastructureModule { }
